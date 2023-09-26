@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Gilroy-Reg';
+    src: url("../fonts/gilroy-regular-webfont.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("../fonts/gilroy-bold-webfont.woff2");
+    font-weight: 400;
+}

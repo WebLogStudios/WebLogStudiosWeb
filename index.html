@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>WebLog Studios</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <a class="to-top" href="#header">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <header class="header" id="header">
+            <div class="wrapper-inner">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#about-us">O nás</a></li>
+                        <li class="header__list-item"><a href="#works">Naše práce</a></li>
+                        <li class="header__list-item"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header__adaptive-menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="img/banner.jpg" alt="banner">
+        </div>
+        <main class="content">
+            <section class="about-us">
+                <div class="wrapper-inner">
+                    <h2 class="about-us__title h2" id="about-us">
+                        O nás
+                    </h2>
+                    <p class="about-us__text">
+                        Sme mladí, kreatívni a pre programovanie zanietení študenti, ktorí využívaju svoj voľný čas
+                        štúdiom nových vecí, programovaním a športovaním. Programovaniu, tvoreniu Web stránok a
+                        vytváraniu orginalnych nápadov sa venujeme už od detstva.
+                        Chceme si popri štúdiu zarobiť ale zároveň priniesť jedinečné riešenie pre Vás a Váš business.
+                    </p>
+                </div>
+            </section>
+            <section class="works">
+                <div class="wrapper-inner">
+                    <h2 class="works__title h2" id="works">
+                        Naše práce
+                    </h2>
+                    <div class="works__block">
+                        <div class="works__block-item">
+                            <span class="works__item-text">The Magic Slab</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img1.png" alt="work_img1">
+                            </div>
+                        </div>
+                        <div class="works__block-item">
+                            <span class="works__item-text">Luxury Restaurant</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img2.png" alt="work_img2">
+                            </div>
+                        </div>
+                        <div class="works__block-item">
+                            <span class="works__item-text">Business</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img3.png" alt="work_img3">
+                            </div>
+                        </div>
+                        <div class="works__block-item">
+                            <span class="works__item-text">Cornelia</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img4.png" alt="work_img4">
+                            </div>
+                        </div>
+                        <div class="works__block-item">
+                            <span class="works__item-text">Dubai Reality</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img5.png" alt="work_img5">
+                            </div>
+                        </div>
+                        <div class="works__block-item">
+                            <span class="works__item-text">Velocity</span>
+                            <div class="works__item-img">
+                                <img src="img/work_img6.png" alt="work_img6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="price">
+                <h2 class="h2 price__title">Ceny</h2>
+                <span class="price__subtitle">(Robíme len frontend pre vašu stránku)</span>
+                <span class="price__price">29,99 - 99,99</span>
+            </section>
+        </main>
+        <footer class="footer" id="contact">
+            <div class="wrapper-inner">
+                <h2 class="h2 footer__title">Kontakt</h2>
+                <div class="footer__contact-block">
+                    <p class="footer__contact-item">Telefónne číslo: <a href="tel:+421904530244">+421 904 530 244</a>
+                    </p>
+                    <p class="footer__contact-item">Mail: <a
+                            href="mailto:weblogostudiosksa@gmail.com">weblogostudiosksa@gmail.com
+                        </a></p>
+                    <p class="footer__contact-item">Instagram: <a
+                            href="https://instagram.com/weblog_studios?igshid=OGQ5ZDc2ODk2ZA==">weblog_studios
+                        </a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.works__block').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: "<button type='button' class='works__arrow-prev slick-prev'><i class='fa-solid fa-arrow-left'></i></button>",
+                nextArrow: "<button type='button' class='works__arrow-next slick-next'><i class='fa-solid fa-arrow-right'></i></button>",
+                dots: true,
+                centerMode: true,
+                centerPadding: '60px',
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 996,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerPadding: '30px'
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
